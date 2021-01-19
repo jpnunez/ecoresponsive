@@ -318,7 +318,7 @@
 .sneaker__name, .sneaker__preci{
     font-size: var(--h2-font-size);
     letter-spacing: .1rem;
-    font-weight: var(--font-semi-bold);
+    font-weight: var(--font-bold);
 }
 
 .sneaker__name{
@@ -331,4 +331,107 @@
 
 .sneaker:hover{
     transform: translateY(-.5rem);
+}
+
+/* collection */
+.collection__container{
+    row-gap: 2rem;
+    justify-content: center;
+}
+
+.collection__card{
+    position: relative;
+    display: flex;
+    height: 328px;
+    background-color: var(--dark-color-lighten);
+    padding: 2rem;
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.collection__data{
+    align-self: flex-end;
+}
+
+.collection__img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 230px;
+}
+
+.collection__name{
+    font-size: var(--bigger-font-size);
+    margin-bottom: .25rem;
+}
+
+.collection__description{
+    margin-bottom: var(--mb-2);
+}
+
+.collection__card:hover{
+    transform: translateY(-.25rem);
+}
+
+/*women sneakers*/
+.women__container{
+    row-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/*offer*/
+
+.offer__container{
+    grid-template-columns: 55% 45%;
+    column-gap: 0;
+    background-color: var(--dark-color-lighten);
+    border-radius: .5rem;
+    justify-content: center;
+}
+
+.offer__data{
+    padding: 4rem 0 4rem 1.5rem;
+}
+
+.offer__title{
+    font-size: var(--biggest-font-size);
+    margin-bottom: .25rem;
+}
+
+.offer__description{
+    margin-bottom: var(--mb-3);
+}
+
+.offer__img{
+    width: 153px;
+}
+
+/*new collection*/
+
+.new__container{
+    row-gap: 2rem;
+}
+
+.new__mens{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--dark-color-lighten);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.new__mens-img{
+    width: 276px;
+    margin-bottom: var(--mb-3);
+}
+
+.new__title{
+    font-size: var(--bigger-font-size);
+    margin-bottom: .25rem;
+}
+
+.new__preci{
+    display: block;
+    margin-bottom: var(--mb-3);
 }
